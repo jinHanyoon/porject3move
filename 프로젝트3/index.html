@@ -13,6 +13,7 @@
             $('.picture02').hide()
             $('.picture03').hide()
             $('.picture01').show()
+            $('.m_menu').hide()
 
             
             $('.page2_text li').hover(function(){
@@ -83,6 +84,16 @@
             $(this).removeClass('on')
         }
         )
+        $('.onb').click(function(){
+            $('.m_menu').slideToggle(800)
+        })
+        $('.m_menu li').hover(function(){
+            $(this).addClass('on')
+        },
+        function(){
+            $(this).removeClass('on')
+        }
+        )
        
         })
     </script>
@@ -101,8 +112,22 @@
                             <li><a href="#">NEWS</a></li>
                             <li><a href="#">CONTACT</a></li>      
                         </ul>
-                        
                     </div>
+
+                        <div class="m_menu">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">BUSINESS</a></li>
+                                <li><a href="#">BRAND</a></li>
+                                <li><a href="#">NEWS</a></li>
+                                <li><a href="#">CONTACT</a></li>     
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">회원가입</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="onb"></div>
                     <div class="burger">      
                     <ul>
                         <li><a href="#"></a></li> 
@@ -126,7 +151,7 @@
             <div class="page2_contents">
                
                 <div class="page2_text">
-                    <ul>
+                    <ul class="page2_info">
                        <li><div class="more1">
                     
                        </div>
@@ -208,8 +233,8 @@
             <div class="help_left">
                 <div class="left_text">
                 <h1>궁금한 사항을 <br>
-                    간편하게 문의해보세요.<br></h1>
-                    <br<p> 궁금한 사항을 편하게 문의해주세요</p>
+                    간편하게 문의해보세요.</h1>
+                <p> 궁금한 사항을 편하게 문의해주세요</p>
                 </div>
                 <ul>
                     <li>고객센터 ></li>
@@ -230,12 +255,12 @@
                             <div></div>
                         </div>
                         <div class="footer_text">
-                           <p>Tel. 02-000-0000
-                            <br> Fax. 02-000-0000 abcdf@abcdfe.com
+                           <p>Tel. 02-000-0000<br>
+                            Fax. 02-000-0000 abcdf@abcdfe.com
                            <br>  서울시 서초구 서초구  빌딩
-                            <br>License 2000-서울서초0000
+                            <br>License 2000-서울서초0000</p>
                             
-                        </p></div>
+                        </div>
                         <div class="info">
                             개인정보취급방침 +
                         </div>
